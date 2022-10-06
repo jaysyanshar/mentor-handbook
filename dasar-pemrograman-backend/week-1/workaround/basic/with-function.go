@@ -15,8 +15,8 @@ func main() {
 	}
 	sum := sum(arr)
 	odd := countOdd(arr)
-	fmt.Print("Sum\t= ", sum)
-	fmt.Print("Count Odd\t= ", odd)
+	fmt.Println("Sum\t= ", sum)
+	fmt.Println("Count Odd\t= ", odd)
 }
 
 func sum(arr []int) int {
