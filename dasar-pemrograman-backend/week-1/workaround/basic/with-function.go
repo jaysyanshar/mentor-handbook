@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var n, total int
+	var n int
 	var arr []int
 	fmt.Print("Number of inputs: ")
 	fmt.Scan(&n)
@@ -13,14 +13,26 @@ func main() {
 		fmt.Scan(&m)
 		arr = append(arr, m)
 	}
-	total = sum(arr)
-	fmt.Print("Total = ", total)
+	sum := sum(arr)
+	odd := countOdd(arr)
+	fmt.Print("Sum\t= ", sum)
+	fmt.Print("Count Odd\t= ", odd)
 }
 
 func sum(arr []int) int {
 	var total int
 	for _, v := range arr {
 		total += v
+	}
+	return total
+}
+
+func countOdd(arr []int) int {
+	var total int
+	for _, v := range arr {
+		if v%2 != 0 {
+			total++
+		}
 	}
 	return total
 }
