@@ -25,67 +25,36 @@
 
 ## Basic
 
-### TBA
+### Basic Login Page
 
 - Concepts:
-  - TBA
+  - Authentication and Routing
 - Input:
-  - TBA
+  - A simple HTML page showing login.
 - Output:
-  - TBA
+  - Change to another page, deny access if not logged in
 - Directions:
-  - TBA
+  - Create ListenAndServe
+  - Create two routing, login and dashboard
+  - Dashboard is protected, method of protection can use simple flag or use HTTP basic auth
+  - Create login page with form.
+  - Use static username and passwor for now.
+  - If valid login, then show dashboard.
+  - Content of dashboard can be a simple Hello World.
 
-### TBA
+### Social Media Status Checker
 
 - Concepts:
-  - TBA
+  - Concurrency
 - Input:
-  - TBA
+  - A list of website in an array of string: e.g. https://facebook.com, https://twitter.com, https://linkedin.com
 - Output:
-  - TBA
+  - A string showing HTTP Status Codes and website is up or down (one line for each website), e.g. "[200] https://facebook.com is up"
 - Direction:
-  - TBA
-
-### TBA
-
-- Concepts:
-  - TBA
-- Input:
-  - TBA
-- Output:
-  - TBA
-- Directions:
-  - TBA
-
-### TBA
-
-- Concepts:
-  - TBA
-- Input:
-  - TBA
-- Output:
-  - TBA
-- Directions:
-  - TBA
-
-### TBA
-- Concepts:
-  - TBA
-- Input:
-  - TBA
-- Output:
-  - TBA
-
-## Challenging
-
-### TBA
-
-- Concepts:
-  - TBA
-- Input:
-  - TBA
-- Output:
-  - TBA
-- Directions:
-  - TBA
+  - Create a function to output the website status.
+  - Use simple http.Get() and format the output.
+  - Show how the output is in order without using concurrency, if possible show the time taken to complete.
+  - Update to use concurrency using go routine.
+  - Show how the output is kind of random, if possible show the time taken to complete.
+  - Update to use concurrency using channel
+  - Reference: https://articles.wesionary.team/practical-example-of-concurrency-on-golang-fc4609ea8ed1
