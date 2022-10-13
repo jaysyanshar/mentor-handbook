@@ -28,67 +28,71 @@
 
 ## Basic
 
-### TBA
+### Simple Attendance Data
 
 - Concepts:
-  - TBA
+  - Create and make changes to array
 - Input:
-  - TBA
+  - One string separated by comma containing 'Present/Absent/Sick'.
 - Output:
-  - TBA
+  - An array of the data from the string
 - Directions:
-  - TBA
+  - Create a string containing value of "Present, Absent, Sick" multiple times, e.g. "Present, Absent, Sick, Present, Present, Present"
+  - Create an array from the string.
+  - show the result
+  - Change all the 'Absent' to 'Present'
+  - show the result
+  - Mix in pointer and first class function if possible.
 
-### TBA
+### Simple Slice of Attendance Data
 
 - Concepts:
-  - TBA
+  - Create and make changes to a slice
 - Input:
-  - TBA
+  - A string containing 'Present/Absent/Sick' multiple times, mixed with names, can be 1 or 2 names. The name will the separator. So, the data is an attendance data in the following format: name, status, status, status, status, name, status, status, status, status.
 - Output:
-  - TBA
+  - Slice of attendance data, if there are two name, then there are two slices.
 - Direction:
-  - TBA
+  - Convert the string to array first is preferred.
+  - Then slice the array.
+  - Mix in pointer and first class function if possible.
 
-### TBA
+### Simple Map of Attendance Data
 
 - Concepts:
-  - TBA
+  - Create and make changes to a map
 - Input:
-  - TBA
+  - A string of containing 'Present/Absent/Sick' multiple times. e.g. "Present, Present, Absent, Present"
 - Output:
-  - TBA
+  - A map containing key 'Present, Absent, Sick' with the number of time the word is present in the string as the value. e.g. Present:3, Absent:1, Sick:0
 - Directions:
-  - TBA
-
-### TBA
-
-- Concepts:
-  - TBA
-- Input:
-  - TBA
-- Output:
-  - TBA
-- Directions:
-  - TBA
-
-### TBA
-- Concepts:
-  - TBA
-- Input:
-  - TBA
-- Output:
-  - TBA
+  - Create the string first.
+  - Create the map with the keys
+  - Process and update the keys with the number of times the key shows up in the string.
+  - This is not a test, so it's OK to simply type in the key manually into the map. No need to make it dynamic.
 
 ## Challenging
 
-### TBA
+### Dynamic Simple Map of Attendance Data
 
 - Concepts:
-  - TBA
+  - Follow Simple Map of Attendance Data
 - Input:
-  - TBA
+  - Follow Simple Map of Attendance Data
 - Output:
-  - TBA
+  - Follow Simple Map of Attendance Data
 - Directions:
-  - TBA
+  - Follow Simple Map of Attendance Data, except the last directions, in this challenge, it must be dynamic.
+
+### Multi-dimensional
+
+- Concepts:
+  - Slice of Map
+- Input:
+  - A string containing 'Present/Absent/Sick' multiple times, mixed with names, can be 1 or 2 names. The name will the separator. So, the data is an attendance data in the following format: name, status, status, status, status, name, status, status, status, status.
+- Output:
+  - Slice of map with name and attendance data, e.g.
+    map[Budi: Present:3, Absent:1, Sick:0]
+    map[Adi: Present:4, Absent:0, Sick:0]
+- Directions:
+  - Free flow

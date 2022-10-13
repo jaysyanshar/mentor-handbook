@@ -26,67 +26,53 @@
 
 ## Basic
 
-### TBA
+### Simple Attendance Data with Struct and Interface
 
 - Concepts:
-  - TBA
+  - Struct, interface
 - Input:
-  - TBA
+  - A string of "Present, Absent, Sick" multiple times separated by names. E.g. "Budi, Present, Present, Sick, Present, Ani, Present, Present, Absent, Absent"
 - Output:
-  - TBA
+  - A struct containing the key of name and rawData. Name is self explanatory, rawData is the string of Present, Sick, Absent for the name. If two names, then two struct. Example: { name: Budi, rawData: "Present, Present,  Sick, Present" } and { name: Ani, rawData: "Present, Present, Absent, Absent" }
 - Directions:
-  - TBA
+  - Create an interface method populate()
+  - Create a struct with key "name, rawData" and default value.
+  - Create method struct populate()
+  - Use the populate to fill the struct value.
 
-### TBA
+### Simple Attendance with Error Handling
 
 - Concepts:
-  - TBA
+  - Struct, Interface, Error handling
 - Input:
-  - TBA
+  - Same as above, with the addition of string "Not Present" mixed in.
 - Output:
-  - TBA
+  - Same as above
 - Direction:
-  - TBA
+  - Same as above
+  - Add a check in populate() that if the string rawData contains "Not Present", it will return an error "Not a valid value".
 
-### TBA
+### Simple attendance with package
 
 - Concepts:
-  - TBA
+  - Struct, internal package
 - Input:
-  - TBA
+  - Use the struct above.
 - Output:
-  - TBA
+  - Update the struct with date and time
 - Directions:
-  - TBA
-
-### TBA
-
-- Concepts:
-  - TBA
-- Input:
-  - TBA
-- Output:
-  - TBA
-- Directions:
-  - TBA
-
-### TBA
-- Concepts:
-  - TBA
-- Input:
-  - TBA
-- Output:
-  - TBA
+  - Import package time
+  - Using the struct above, add new key "date" and fill in the key, the first is filled with the first date of this month. E.g. Today is October 2022, so the first data is 1 Oct 2022, second data is 2 Oct 2022, and so on.
 
 ## Challenging
 
-### TBA
+### Attendance Data
 
 - Concepts:
-  - TBA
+  - Same as Simple Attendance Data with Struct and Interface
 - Input:
-  - TBA
+  - Same as Simple Attendance Data with Struct and Interface
 - Output:
-  - TBA
+  - Similar to Simple Attendance Data with Struct and Interface, but use array of struct, instead of 2 struct.
 - Directions:
-  - TBA
+  - Same as Simple Attendance Data with Struct and Interface with the exception of end result should be array of struct.
