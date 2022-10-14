@@ -17,10 +17,10 @@ func getAttendances(arr []string) map[string]map[string]int {
 	name := ""
 	for _, v := range arr {
 		if v == "Present" || v == "Absent" || v == "Sick" {
-			attendances[name][v]++
+			attendances[name][v]++ // attendances["Person_1"]["Present"] += 1
 		} else {
 			name = v
-			attendances[name] = make(map[string]int)
+			attendances[name] = make(map[string]int) // attendances["Person_1"] = new map()
 		}
 	}
 	return attendances
