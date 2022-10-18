@@ -5,9 +5,9 @@ import "fmt"
 func main() {
 	arr := []int{1, 2, 3, 4, 5}
 	// IIFE
-	sum, mul := func(arr []int) (int, int) {
-		s := Sum(arr)
-		m := Multiply(arr)
+	sum, mul := func(a []int) (int, int) {
+		s := Sum(a)
+		m := Multiply(a)
 		return s, m
 	}(arr)
 	fmt.Println("sum =", sum)
@@ -17,10 +17,10 @@ func main() {
 // normal function
 func Sum(arr []int) int {
 	// function as variable
-	total := 0
 	add := func(a, b int) int {
 		return a + b
 	}
+	total := 0
 	Loop(arr, func(x int) {
 		// closure
 		total = add(total, x)
