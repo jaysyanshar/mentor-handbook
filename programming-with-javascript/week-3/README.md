@@ -14,6 +14,14 @@
 
 ## Learning Objectives
 
+- OOP (Theoritical)
+    - Explain basic OOP theory
+        - class as a blueprint
+        - property as variable in OOP
+        - method as function in OOP
+        - instantiate using new
+        - this as reference to self in OOP
+    - Explain method chaining theory
 - Callback
     - Able to use create callback function
 - Promise
