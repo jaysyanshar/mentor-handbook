@@ -1,0 +1,25 @@
+structure
+1. interface: Vehicle -> GetVehicleType, IsNew
+2. struct: Car, Motorcycle, Plane
+3. Car: Brand, Model, Year
+4. Motorcycle: Brand, Model, Year
+5. Plane: Brand, Model, Year
+6. function: PopulateVehicle -> Vehicle
+
+logic
+1. input user -> Brand, Model, Year
+2. output -> Vehicle Type -> (New/Old) Car / Motorcycle / Plane
+3. IsNew:
+-- Car: age <= 5 years
+-- Motorcycle: age <= 1 years
+-- Plane: age <= 10 years
+
+database
+1. Car, Motorcycle, Plane -> Brand, Model
+
+requirement
+1. Struct
+2. Interface
+3. Package import
+4. Error handling -> brand not exists / model not exists / invalid year
+-- 1000 <= year <= 2022
